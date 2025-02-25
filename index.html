@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI PDF Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Upload Your Marksheet PDF/Image</h1>
+    
+    <!-- File Upload Button -->
+    <input type="file" id="fileInput" accept=".pdf,.png,.jpg">
+    
+    <!-- PDF/Image Display Area -->
+    <canvas id="pdfCanvas"></canvas>
+    
+    <!-- Edit Text Box (Hidden Initially) -->
+    <div id="editBox" class="hidden">
+        <input type="text" id="editedText">
+        <button onclick="saveEdit()">Save</button>
+    </div>
+
+    <!-- Libraries -->
+    <script src="https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+    <script src="script.js"></script>
+    <button onclick="exportPDF()">Download Edited PDF</button>
+</body>
+</html>
