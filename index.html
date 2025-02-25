@@ -6,20 +6,12 @@
 </head>
 <body>
     <h1>Upload Your Marksheet PDF/Image</h1>
-    
-    <!-- File Upload Button -->
     <input type="file" id="fileInput" accept=".pdf,.png,.jpg">
-    
-    <!-- PDF/Image Display Area -->
     <canvas id="pdfCanvas"></canvas>
-    
-    <!-- Edit Text Box (Hidden Initially) -->
     <div id="editBox" class="hidden">
         <input type="text" id="editedText">
         <button onclick="saveEdit()">Save</button>
     </div>
-
-    <!-- Libraries -->
     <script src="https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
